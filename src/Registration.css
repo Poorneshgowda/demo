@@ -1,0 +1,22 @@
+
+form {
+    border: 3px solid grey;
+    margin-left: 550px;
+    margin-right:500px;
+    margin-top: 10px;
+    padding: 10px;
+    
+   /* // text-align: center; */
+    
+
+  }
+.container {
+   
+    padding: 40px;
+    font-family: Arial;
+    /* text-align: center; */
+  }
+
+  /* .Registration{
+    text-align: center; 
+  } */

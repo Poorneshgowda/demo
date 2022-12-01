@@ -1,0 +1,12 @@
+.Home {
+   
+   text-align:center; 
+ 
+   box-sizing: unset;
+   padding: 10px;
+   border-radius: 150%;
+   background-color: rgb(151, 151, 210);
+   border: 20px  rgb(20, 206, 175);
+
+   
+  }
