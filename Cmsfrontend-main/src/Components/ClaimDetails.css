@@ -1,0 +1,14 @@
+.boxed {
+    border: 5px solid rgb(170, 176, 170);
+    width: 300px;
+    background-color: rgb(18, 205, 177);
+
+}
+
+.logout {
+    width: 100px;
+    align-items: right;
+}
+.bla{
+    float:right;
+  }

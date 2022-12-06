@@ -1,0 +1,13 @@
+.boxed {
+    border: 5px solid rgb(170, 176, 170);
+    width: 300px;
+    background-color: rgb(18, 205, 177);
+
+}
+/* .MP{
+    background-color:antiquewhite;
+    text-align: center;
+} */
+.bla{
+    float:right;
+  }
