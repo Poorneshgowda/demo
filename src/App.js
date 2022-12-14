@@ -1,30 +1,30 @@
-// //import logo from './logo.svg';
- import './App.css';
-
-//const { render } = require("@testing-library/react");
-
 import React from "react";
-import User from "./User";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ClaimRequest from "./pages/Claim/ClaimRequest";
+import Members from "./pages/Member/Members";
+import AddMember from "./pages/Member/AddMember";
+import ProcessClaim from "./pages/Claim/ProcessClaim";
+import Claims from "./pages/Claim/Claims";
+import SideNav from "./components/SideNav/SideNav";
+import Dashboard from "./pages/Dashboard/Dashboard";
+import Login from "./pages/Login/Login";
+import UpdateMember from "./pages/Member/UpdateMember";
 
-class App extends React.Component
-
-{
-    constructor()
-    {
-        super();
-        this.state={delete:false};
-
-    }
-
-
-    render() {
-        return(
-            <div>
-                <h1>User List</h1>
-                <button onClick={() => this.state({ delete:true})}> Delete Users</button>
-                {this.state.delete ? null : <User />}
-            </div>
-        );
-    }
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<SideNav />}>
+          <Route path="login" element={<Login />} />
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="members" element={<Members />} />
+          <Route path="addMember" element={<AddMember />} />
+          <Route path="updateMember/:id" element={<UpdateMember />} />
+          <Route path="newRequest" element={<ClaimRequest />} />
+          <Route path="claims" element={<Claims />} />
+          <Route path="process" element={<ProcessClaim />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
-export default App;
